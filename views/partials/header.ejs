@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="container header__container d-flex flex-align-center">
+    <nav class="navbar navbar-expand-sm navbar-light header__navbar" id="nav-bar" >
+      <div>
+        <a class="navbar-brand" href="/"><img src="images/logo2_sm.png" width="204" height="56" class="d-inline-block align-top" alt=""></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item <% if (page === '') { %>active<% } %>">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item <% if (page === 'Contact') { %>active<% } %>">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,22 @@
+.hero {
+  background-size: cover;
+  background-repeat: none;
+  background-position: top;
+  min-height: 100vh;
+  padding: 5rem 0;
+  background-image: url("images/istockphoto-946240308-1024x1024.jpg");
+}
+
+.hero__jumbo {
+  background-color: rgba(55, 55, 55, 0.9);
+  color: white;
+  margin-top: 15vh;
+}
+
+.hero__h1 {
+  font-size: 3rem;
+}
+
+.hero__btn {
+  width: 100%;
+}
