@@ -8,17 +8,21 @@ app.use( express.static( "public" ) );
 
 app.get('/', (req, res) => res.render('pages/index', {
   phoneNumber: config.phonePrimary,
-  page: ''
+  page: '',
+  customCss: 'index.css'
 }));
 
-app.get('/option2', (req, res) => res.render('pages/index2', {
+app.get('/option2', (req, res) => res.render('pages/index', {
   phoneNumber: config.phonePrimary,
-  page: ''
+  page: '',
+  customCss: 'index2.css'
 }));
 
-app.get('/option3', (req, res) => res.render('pages/index3', {
+app.get('/option3', (req, res) => res.render('pages/index', {
   phoneNumber: config.phonePrimary,
-  page: ''
+  page: '',
+  customCss: 'index3.css',
+  header: 'header-transparent'
 }));
 
 app.get('/contact', (req, res) => res.render('pages/contact', {
@@ -28,7 +32,8 @@ app.get('/contact', (req, res) => res.render('pages/contact', {
 
 app.get('/privacy', (req, res) => res.render('pages/privacy', {
   phoneNumber: config.phonePrimary,
-  page: 'Privacy'
+  page: 'Privacy',
+  domain: config.domain
 }));
 
 const port = process.env.PORT || 5000;
