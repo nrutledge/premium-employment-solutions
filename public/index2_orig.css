@@ -8,9 +8,8 @@
 }
 
 .hero__jumbo {
-  background-color: initial;
-  border: 2px solid white;
-  color: #222;
+  background-color: rgba(55, 55, 55, 0.9);
+  color: white;
 }
 
 .hero__h1 {
