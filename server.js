@@ -9,7 +9,8 @@ app.use( express.static( "public" ) );
 app.get('/', (req, res) => res.render('pages/index', {
   phoneNumber: config.phonePrimary,
   page: '',
-  customCss: 'index.css'
+  customCss: 'index.css',
+  jumboWidth: '7'
 }));
 
 app.get('/option2', (req, res) => res.render('pages/index', {
